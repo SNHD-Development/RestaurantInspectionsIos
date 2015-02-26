@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="winWebView" modal="true">
+		<View id="vTitle">
+			<Button id="btnClose" onClick="btnClose_onClick">Close</Button>
+			<Label id="lblTitle"></Label>
+		</View>
+        <WebView id="wvMain" />
+    </Window>
+</Alloy>

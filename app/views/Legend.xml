@@ -1,0 +1,50 @@
+<Alloy>
+	<View id="vLegend">
+		<View id="whiteBack">
+			<Label height="5"></Label>
+			<View class="legendRow">
+				<View id="legendGradeA" class="gradeOuter">
+					<Label class="grade">A</Label>
+				</View>
+				<Label  class="legendGradeDetail">Grade A</Label>
+			</View>
+			<View class="legendRow">
+				<View id="legendGradeB" class="gradeOuter">
+					<Label class="grade">B</Label>
+				</View>
+				<Label class="legendGradeDetail">Grade B</Label>
+			</View>
+			<View class="legendRow">
+				<View id="legendGradeC" class="gradeOuter">
+					<Label class="grade">C</Label>
+				</View>
+				<Label class="legendGradeDetail">Grade C</Label>
+			</View>
+			<View class="legendRow">
+				<View id="legendGradeX" class="gradeOuter">
+					<Label class="grade">X</Label>
+				</View>
+				<Label class="legendGradeDetail">Closed</Label>
+			</View>
+			<View class="legendRow">
+				<View id="legendGradeP" class="gradeOuter">
+					<Label class="grade">P</Label>
+				</View>
+				<Label class="legendGradeDetail">Pending</Label>
+			</View>
+			<View class="legendRow">
+				<View id="legendGradeN" class="gradeOuter">
+					<Label class="grade">N</Label>
+				</View>
+				<Label class="legendGradeDetail">Not Approved to Open</Label>
+			</View>
+			<View class="legendRow">
+				<View id="legendGradeO" class="gradeOuter">
+					<Label class="grade">O</Label>
+				</View>
+				<Label class="legendGradeDetail">Approved to Open</Label>
+			</View>
+			<Label height="20"></Label>
+		</View>
+	</View>
+</Alloy>

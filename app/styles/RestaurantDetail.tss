@@ -1,0 +1,179 @@
+"#winRestaurantDetail": {
+	backgroundColor: 'white',
+	backgroundImage: '/images/p6.png',
+	backgroundRepeat: 'true',
+	opacity: 0
+}
+
+
+"#vTitle":{
+	top: 150,
+	backgroundColor: 'white',
+	height: 50,
+	opacity: 0.75,
+	zIndex:2,
+	layout: 'vertical'
+}
+
+"#lblTitle":{
+	top: 8,
+	color:'black',
+	font: { fontSize: 17, fontWeight: 'bold' },
+	textAlign: 'center',
+	wordWrap: false,
+	height: 20,
+	width: '100%',
+}
+
+"#lblSubTitle":{
+	color:'#555',
+	font: { fontSize: 12},
+	textAlign: 'center',
+	width: '100%',
+}
+
+"#itemSeparator":{
+	height: '5dp',
+	width: Titanium.UI.FILL,
+	bottom: 0,
+	backgroundColor:Alloy.CFG.AppBackground
+}
+
+"#gradeOuter":{
+	top: 0,
+	right: 0,
+	backgroundColor: Alloy.CFG.GradeYellow,
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE
+}
+
+"#demeritsOuter":{
+	top: 45,
+	right: 0,
+	backgroundColor: Alloy.CFG.DemeritsGray,
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE
+}
+
+"#grade":{
+	color: 'white',
+	font: { fontSize: 30 },
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: 50,
+	width: 50
+}
+
+"#demerits":{
+	color: 'black',
+	font: { fontSize: 13 },
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: 50,
+	height: 25
+}
+
+"#inspectedDate":{
+	color: '#353535',
+	left: 10,
+	top: 15,
+	font: { fontSize: 14, fontWeight: 'bold' },
+}
+
+"#btnBack":{
+	backgroundColor: 'transparent',
+	backgroundImage: '/images/back.png',
+	width: 40,
+	height: 40,
+	zIndex: 2,
+	left: 5,
+	top: 25,
+	opacity: 0.8,
+	viewShadowColor: '#aaa',
+	viewShadowRadius: 10,
+	clipMode: Titanium.UI.iOS.CLIP_MODE_DISABLED
+}
+
+"#tvInspections":{
+	top: 200,
+	separatorColor: "transparent",
+	allowsSelection: false,
+	minRowHeight: 80,
+	backgroundImage: '/images/p6.png',
+	backgroundRepeat: 'true',
+}
+
+".trInspection":{
+	color: "white",
+	backgroundColor: "white",
+	height: Titanium.UI.SIZE
+}
+
+".lblViolations":{
+	top: 40,
+	left: 20,
+	color: '#888',
+	font: {fontSize: 13},
+	width: Alloy.Globals.ViolationsLabelWidth
+}
+
+"#vFooter":{
+	bottom: 0,
+	backgroundColor:"#f8f8f8",
+	borderColor:"#ccc",
+	width: '100%',
+    height: 45,
+    layout: 'horizontal',
+    zIndex: 2
+}
+
+".lblToolbuttonText":{
+	font: {
+		fontSize: 10,
+		fontWeight: "bold"
+	},
+	textAlign: "center",
+	color: Alloy.CFG.AppBlue
+}
+
+"#ivBookmark":{
+	image: '/images/star.png',
+}
+
+"#ivFeedback":{
+	image: '/images/feedback.png',
+}
+
+"#ivDirections":{
+	image: '/images/map-pin.png',
+}
+
+"#ivYelp":{
+	image: '/images/yelp.png',
+}
+
+".ivToolbuttonImage":{
+	height: 22,
+	width: 22
+}
+
+".vToolbarItem":{
+	top: 5,
+	left: 10,
+	height:40,
+	width:70,
+	layout:'vertical'
+}
+
+"#mapview":{
+	top:0,
+	mapType: Alloy.Globals.Map.NORMAL_TYPE,
+    animate:true,
+    regionFit:true,
+	width: Titanium.UI.FILL,
+	height: 200,
+    userLocation:true
+}
+
+"#aCurrentLoc":{
+	pincolor:Alloy.Globals.Map.ANNOTATION_RED,
+	myid: 1
+}

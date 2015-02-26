@@ -1,0 +1,76 @@
+
+"#lblNoResults":{
+	top: 120,
+	color: 'white',
+	font: { fontSize: 16 },
+	visible: false,
+	zIndex: 2
+}
+
+"#name":{
+    color: 'black',
+    font: { fontSize: 14, fontWeight: 'bold' },
+    left: 60, 
+    top: 11,
+    height: 20,
+    wordWrap: false,
+    width: Titanium.UI.FILL
+}
+
+"#location" : {
+    color: '#888',
+    font: { fontSize: 12 },
+    left: 60, 
+    top: 31
+}
+
+".gradeOuter":{
+	top: 15,
+	left: 8,
+	backgroundColor: Alloy.CFG.GradeYellow,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE
+}
+
+".grade":{
+	color: 'white',
+	font: { fontSize: 24 },
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: 40,
+	width: 40
+}
+
+"#demerits":{
+	color: '#888',
+	font: { fontSize: 12 },
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    left: 60, 
+    top: 46
+}
+
+"#itemSeparator":{
+	height: 5,
+	width: Titanium.UI.FILL,
+	top: 70,
+	backgroundColor:Alloy.CFG.AppBackground
+}
+
+"ListItem":{
+	backgroundColor: 'white',
+	height: 75,
+	width: '100%',
+	selectionStyle: Titanium.UI.iPhone.ListViewCellSelectionStyle.BLUE
+}
+
+"ListView":{
+	separatorColor: 'transparent',
+	height: Ti.UI.SIZE,
+	top: 0
+}
+
+"#vSummaryView":{
+	backgroundImage: '/images/p6.png',
+	backgroundRepeat: true	
+}
+
+

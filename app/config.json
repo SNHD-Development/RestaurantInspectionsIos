@@ -1,0 +1,30 @@
+{
+  "global": {
+    "ApiBaseUri": "http://ris-dev.cchd.org/",
+    "InternalApiBaseUri": "http://api-dev.southernnevadahealthdistrict.org/",
+    "GradeA": "#0055a5",
+    "GradeB": "#00a261",
+    "GradeC": "#f26532",
+    "GradeX": "#df344c",
+    "GradeN": "#bbbbbb",
+    "GradeO": "#e6d72c",
+    "GradeP": "#af6ef1",
+    "DemeritsGray": "#ececec",
+    "AppBackground": "#e0dcd8",
+    "AppBlue": "#0e4291",
+    "DefaultLat": "36.085883",
+    "DefaultLon":"-115.149411"
+  },
+  "env:development": {},
+  "env:test": {},
+  "env:production": {},
+  "os:android": {},
+  "os:blackberry": {},
+  "sourcemap": false,
+  "os:ios": {},
+  "os:mobileweb": {},
+  "dependencies": {
+    "com.caffeinalab.titanium.loader": "1.2.3",
+    "com.alcoapps.drawermenu" : "2.0"
+  }
+}

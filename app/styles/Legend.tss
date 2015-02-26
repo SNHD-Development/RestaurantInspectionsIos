@@ -1,0 +1,45 @@
+
+"#vLegend":{
+	backgroundImage: '/images/p6.png',
+	backgroundRepeat: true,	
+	layout: 'vertical',
+}
+
+".legendRow":{
+	left: 12,
+	layout: 'horizontal',
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	backgroundColor: 'white'
+}
+
+".legendGradeDetail":{
+	top: 24,
+	left: 15,
+	color: 'black',
+    font: { fontSize: 14 },
+}
+
+".gradeOuter":{
+	top: 15,
+	left: 8,
+	backgroundColor: Alloy.CFG.GradeYellow,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE
+}
+
+".grade":{
+	color: 'white',
+	font: { fontSize: 24 },
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: 40,
+	width: 40
+}
+
+"#whiteBack":{
+	backgroundColor: 'white',
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	layout: 'vertical',
+	top: 0
+}

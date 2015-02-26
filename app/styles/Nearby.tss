@@ -1,0 +1,129 @@
+"#vSummaryView":{
+	top: 130,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE
+}
+
+"#mapview":{
+	top: 0,
+	mapType: Alloy.Globals.Map.NORMAL_TYPE,
+    animate:true,
+    regionFit:true,
+	width: Titanium.UI.FILL,
+	height: 130,
+    userLocation:true,
+}
+
+"#aCurrentLoc":{
+	pincolor:Alloy.Globals.Map.ANNOTATION_RED,
+	myid: 1
+}
+
+"#lblNoResults":{
+	top: 120,
+	color: 'white',
+	font: { fontSize: 16 },
+	visible: false,
+	zIndex: 2
+}
+
+"#name":{
+    color: 'black',
+    font: { fontSize: 14, fontWeight: 'bold' },
+    left: 60, 
+    top: 11,
+    height: 20,
+    wordWrap: false,
+    width: Titanium.UI.FILL
+}
+
+"#location" : {
+    color: '#888',
+    font: { fontSize: 12 },
+    left: 60, 
+    top: 31
+}
+
+".gradeOuter":{
+	top: 15,
+	left: 8,
+	backgroundColor: Alloy.CFG.GradeYellow,
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE
+}
+
+".grade":{
+	color: 'white',
+	font: { fontSize: 24 },
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	height: 40,
+	width: 40
+}
+
+"#demerits":{
+	color: '#888',
+	font: { fontSize: 12 },
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    left: 60, 
+    top: 46
+}
+
+"#itemSeparator":{
+	height: 5,
+	width: Titanium.UI.FILL,
+	top: 70,
+	backgroundColor:Alloy.CFG.AppBackground
+}
+
+"ListItem":{
+	backgroundColor: 'white',
+	height: 75,
+	width: '100%',
+	selectionStyle: Titanium.UI.iPhone.ListViewCellSelectionStyle.BLUE
+}
+
+"ListView":{
+	separatorColor: 'transparent',
+	backgroundColor:Alloy.CFG.AppBackground,
+}
+
+"#vSearchContainer":{
+	height: 40,
+	width: '100%',
+	top: -40,
+	layout: 'horizontal',
+	borderWidth:1,
+	borderColor: '#d0ccc9',
+	backgroundColor: Alloy.CFG.AppBackground,
+	zIndex: 3
+}
+
+"#sbRestaurantSearch":{
+	barColor: Alloy.CFG.AppBackground,
+	pullBackgroundColor: Alloy.CFG.AppBackground,
+	top: 0,
+	hintText:'Search by name',
+	width: '100%',
+	borderWidth:0
+}
+
+"#btnSearchCancel":{
+	backgroundColor: 'transparent',
+	backgroundImage: '/images/search-close.png',
+	width: 40,
+	height: 40,
+	left: -50,
+	zIndex: 5
+}
+
+"#lblDisclaimer":{
+	width: "100%",
+	height: "30",
+	textAlign: "center",
+	backgroundColor: "#ffb141",
+	color: "white",
+	top: 0,
+	zIndex: 2,
+	visible: false
+}
+

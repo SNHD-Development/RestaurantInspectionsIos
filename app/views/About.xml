@@ -1,0 +1,7 @@
+<Alloy>
+	<View class="container">
+		<ScrollView>
+			<Label id="lblMain"></Label>	
+		</ScrollView>
+	</View>
+</Alloy>

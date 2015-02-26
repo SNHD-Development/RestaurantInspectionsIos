@@ -1,0 +1,40 @@
+
+".container": {
+	backgroundColor:Alloy.CFG.AppBackground
+}
+
+"#btnMenu":{
+	width: 60,
+	height: 40,
+	backgroundColor: 'transparent',
+	backgroundImage: '/images/menu-ios.png',
+	zIndex: 10,
+	left: 10
+	
+}
+
+"#vContainer":{
+	top: 60
+}
+
+"#vTitle":{
+	top: 20,
+	backgroundColor: Alloy.CFG.AppBackground,
+	height: 40,
+	zIndex: 3,
+}
+
+"#lblTitle":{
+	color:'black',
+	font: { fontSize: 18, fontWeight: 'bold' },
+	textAlign: 'center',
+	width: '100%'
+}
+
+"#btnSearch":{
+	width: 60,
+	height: 40,
+	backgroundColor: Alloy.CFG.AppBackground,
+	backgroundImage: '/images/search-ios.png',
+	right: 10
+}

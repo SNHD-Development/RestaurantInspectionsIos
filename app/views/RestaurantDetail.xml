@@ -1,0 +1,41 @@
+<Alloy>
+	<Window class="container" id="winRestaurantDetail" onClose="winRestaurantDetail_onClose" 
+		onOpen="restaurantDetail_onOpen">
+		<Module id="mapview" module="ti.map" />
+		<Annotation id="aCurrentLoc" />	
+		<Button id="btnBack" onClick="closeWin" />
+		<View id="vTitle">
+			<Label id="lblTitle">Restaurant Name</Label>
+			<Label id="lblSubTitle">Restaurant Name</Label>
+		</View>
+		<View id="vFooter">
+			<View class="vToolbarItem" onClick="vBookmark_onClick">
+				<ImageView id="ivBookmark" class="ivToolbuttonImage" />
+				<Label id="lblBookmark" class="lblToolbuttonText">Bookmark</Label>
+			</View>
+			<View class="vToolbarItem" onClick="vFeedback_onClick">
+				<ImageView id='ivFeedback' class="ivToolbuttonImage" />
+				<Label class="lblToolbuttonText">Feedback</Label>
+			</View>
+			<View class="vToolbarItem" onClick="vDirections_onClick">
+				<ImageView id='ivDirections' class="ivToolbuttonImage" />
+				<Label class="lblToolbuttonText">Directions</Label>
+			</View>
+			<View class="vToolbarItem" onClick="vYelp_onClick">
+				<ImageView id='ivYelp' class="ivToolbuttonImage" />
+				<Label class="lblToolbuttonText">Yelp</Label>
+			</View>
+		</View>
+		<TableView id="tvInspections" dataCollection="inspections" dataTransform="transformFunction"
+			onSwipe="tvInspection_onSwipe">
+			<TableViewRow class="trInspection">
+				<View id="gradeOuter" backgroundColor="{gradeColor}">
+					<Label id="grade" text="{grade}" />	
+				</View>
+				<Label id="inspectedDate" text="{inspectedDate}" />
+				<View id="itemSeparator"></View>
+				<Label class="lblViolations" text="{violations}"></Label>
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

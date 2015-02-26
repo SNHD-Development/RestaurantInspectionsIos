@@ -1,0 +1,23 @@
+
+"#btnClose": {
+	left: 10
+}
+
+"#vTitle":{
+	top: 20,
+	backgroundColor: Alloy.CFG.AppBackground,
+	height: 40
+}
+
+"#lblTitle":{
+	color:'black',
+	font: { fontSize: 16, fontWeight: 'bold' },
+	textAlign: 'center',
+	width: '100%',
+	left: 0
+}
+
+"#winWebView": {
+	backgroundColor: Alloy.CFG.AppBackground,
+	layout: 'vertical',
+}

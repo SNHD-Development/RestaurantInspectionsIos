@@ -1,0 +1,33 @@
+<Alloy>
+	<Window class="container" id="winLeft">
+		<ImageView id="ivLogo" click="ivLogo_onClick"></ImageView>
+    	<Label id="lblAppTitleHeading">Food Inspections</Label>
+    	<Label id="lblAppleTitleSubHeading">Las Vegas</Label>
+    	<View height="20"></View>
+    	<View class = "vLeftWinMenuItem" viewName="Nearby" id="vMenuItemNearby" onClick="menuItem_onClick"
+    		onTouchstart="menuItem_TouchStart" onTouchend="menuItem_TouchEnd" >
+    		<ImageView class="ivLeftWinMenuIcon" image="/images/map-pin-light.png"></ImageView>
+    		<Label class="lblLeftWinMenuItem">Nearby Restaurants</Label>	
+    	</View>
+		<View class = "vLeftWinMenuItem" viewName="Bookmarked" id="vMenuItemBookmarked" onClick="menuItem_onClick"
+			onTouchstart="menuItem_TouchStart" onTouchend="menuItem_TouchEnd">
+			<ImageView class="ivLeftWinMenuIcon" image="/images/star-filled-light.png"></ImageView>
+			<Label class="lblLeftWinMenuItem">Bookmarked Restaurants</Label>	
+		</View>
+		<View class = "vLeftWinMenuItem" viewName="Legend" id="vMenuItemLegend" onClick="menuItem_onClick"
+			onTouchstart="menuItem_TouchStart" onTouchend="menuItem_TouchEnd">
+			<ImageView class="ivLeftWinMenuIcon" image="/images/info-light.png"></ImageView>
+			<Label class="lblLeftWinMenuItem">Show Legend</Label>	
+		</View>
+		<View class = "vLeftWinMenuItem" viewName="Tweet" id="vMenuItemTweet" onClick="menuItem_onClick"
+			onTouchstart="menuItem_TouchStart" onTouchend="menuItem_TouchEnd">
+			<ImageView class="ivLeftWinMenuIcon" image="/images/tweet-light.png"></ImageView>
+			<Label class="lblLeftWinMenuItem">Tweet</Label>	
+		</View>
+		<View class = "vLeftWinMenuItem" viewName="About" id="vMenuItemAbout" onClick="menuItem_onClick" 
+			onTouchstart="menuItem_TouchStart" onTouchend="menuItem_TouchEnd">
+			<ImageView class="ivLeftWinMenuIcon" image="/images/info-light.png"></ImageView>
+			<Label class="lblLeftWinMenuItem">About</Label>	
+		</View>
+    </Window>
+</Alloy>

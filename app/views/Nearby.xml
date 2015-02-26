@@ -1,0 +1,41 @@
+<Alloy>
+	<View>
+		<View id="vCover"></View>
+		<Module id="mapview" module="ti.map" />
+		<Annotation id="aCurrentLoc" />
+		<Label id="lblDisclaimer" onClick="lblDisclaimer_onClick">Click to see disclaimer</Label>
+		<View id="vSearchContainer">
+			<SearchBar id="sbRestaurantSearch" onReturn="searchHandler" onChange="sbRestaurantSearch_onChange" />
+			<Button  id="btnSearchCancel" onClick="btnSearchCancel_onClick"></Button>
+		</View>
+		<View id="vSummaryView">
+			<Label id="lblNoResults"  text="No results were found" />
+			<ListView id="lvSummary" defaultItemTemplate="template" onItemclick="lvSummary_onItemclick"
+			onPullend="lvSummary_onPullend" onPull="lvSummary_onPull">
+				<Templates>
+					<ItemTemplate name="template">
+						<View bindId="gradeOuter" class="gradeOuter">
+							<Label bindId="grade" class="grade"/>
+						</View>
+						<Label bindId="name" id="name"/>
+						<Label bindId="location" id="location" />
+						<Label bindId="demerits" id="demerits" />
+						<View id="itemSeparator"></View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="lsSummary" dataCollection="restaurants">
+					<ListItem grade:text="{grade}"
+					gradeOuter:backgroundColor="{gradeColor}"
+					demerits:text="{demerits}"
+					name:text="{name}"
+					location:text="{location}" />
+				</ListSection>
+				<PullView>
+					<View backgroundColor="black" height="50">
+						<Label color="white">Refresh Nearby Restaurants</Label>
+					</View>
+				</PullView>
+			</ListView>
+		</View>
+	</View>
+</Alloy>

@@ -1,0 +1,11 @@
+<Alloy>
+	<Require src="LeftMenu" id="leftMenu"/>
+	<Window class="container" id="winHome">
+		<View id="vTitle">
+			<Button id="btnMenu" onClick="toggleLeftWindow" />
+			<Label id="lblTitle"></Label>
+			<Button id="btnSearch" onClick="toggleSearchBar" />
+		</View>
+		<View id="vContainer"></View>
+	</Window>
+</Alloy>

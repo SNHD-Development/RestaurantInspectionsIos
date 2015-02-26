@@ -1,0 +1,14 @@
+
+".container" : {
+  backgroundColor: 'white',
+  layout: 'vertical'
+}
+
+"#lblMain":{
+	top: 20,
+	left: 20,
+	font:{
+		fontSize: 13
+	},
+	color: "#222"
+}
