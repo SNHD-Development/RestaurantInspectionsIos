@@ -1,7 +1,7 @@
 {
   "global": {
     "ApiBaseUri": "http://ris-dev.cchd.org/",
-    "InternalApiBaseUri": "http://api-dev.southernnevadahealthdistrict.org/",
+    "InternalApiBaseUri": "https://api-dev.southernnevadahealthdistrict.org/",
     "GradeA": "#0055a5",
     "GradeB": "#00a261",
     "GradeC": "#f26532",
@@ -16,8 +16,14 @@
     "DefaultLon":"-115.149411"
   },
   "env:development": {},
-  "env:test": {},
-  "env:production": {},
+  "env:test": {
+  	"ApiBaseUri": "http://ris.southernnevadahealthdistrict.org/",
+    "InternalApiBaseUri": "https://api.southernnevadahealthdistrict.org/"
+	},
+  "env:production": {
+  	"ApiBaseUri": "http://ris.southernnevadahealthdistrict.org/",
+    "InternalApiBaseUri": "https://api.southernnevadahealthdistrict.org/"
+  },
   "os:android": {},
   "os:blackberry": {},
   "sourcemap": false,

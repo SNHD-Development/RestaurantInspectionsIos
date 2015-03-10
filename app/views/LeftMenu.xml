@@ -1,8 +1,8 @@
 <Alloy>
 	<Window class="container" id="winLeft">
-		<ImageView id="ivLogo" click="ivLogo_onClick"></ImageView>
-    	<Label id="lblAppTitleHeading">Food Inspections</Label>
-    	<Label id="lblAppleTitleSubHeading">Las Vegas</Label>
+		<ImageView id="ivLogo" onClick="ivLogo_onClick"></ImageView>
+    	<Label id="lblAppTitleHeading">Restaurant Grades</Label>
+    	<Label id="lblAppleTitleSubHeading">Southern Nevada</Label>
     	<View height="20"></View>
     	<View class = "vLeftWinMenuItem" viewName="Nearby" id="vMenuItemNearby" onClick="menuItem_onClick"
     		onTouchstart="menuItem_TouchStart" onTouchend="menuItem_TouchEnd" >
@@ -17,7 +17,7 @@
 		<View class = "vLeftWinMenuItem" viewName="Legend" id="vMenuItemLegend" onClick="menuItem_onClick"
 			onTouchstart="menuItem_TouchStart" onTouchend="menuItem_TouchEnd">
 			<ImageView class="ivLeftWinMenuIcon" image="/images/info-light.png"></ImageView>
-			<Label class="lblLeftWinMenuItem">Show Legend</Label>	
+			<Label class="lblLeftWinMenuItem">Legend</Label>	
 		</View>
 		<View class = "vLeftWinMenuItem" viewName="Tweet" id="vMenuItemTweet" onClick="menuItem_onClick"
 			onTouchstart="menuItem_TouchStart" onTouchend="menuItem_TouchEnd">

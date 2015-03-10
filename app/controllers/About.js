@@ -1,6 +1,10 @@
 var args = arguments[0] || {};
 var util = require('util');
 
+Alloy.Globals.Tracker.trackScreen({
+  screenName: "About"
+});
+
 function init(){
 	$.lblMain.width = util.getPlatformWidthDip() - 40;
 	$.lblMain.text = "The health district conducts unannounced inspections of food " +

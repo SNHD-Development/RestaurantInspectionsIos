@@ -2,6 +2,10 @@ var serviceAgent = require('serviceAgent');
 var util = require('util');
 var args = arguments[0] || {};
 
+Alloy.Globals.Tracker.trackScreen({
+  screenName: "Feedback"
+});
+
 function btnClose_onClick(){
 	$.Feedback.close();	
 }
@@ -35,6 +39,10 @@ function textField_onClick(e){
 }
 
 function btnSubmit_onClick(){
+	Alloy.Globals.Tracker.trackEvent({
+	  category: "UserActions",
+	  action: "FeedbackSubmitted",
+	});
 	unhideKeyboard();
 	Alloy.Globals.Loader.show();
 	serviceAgent.submitFeedback({

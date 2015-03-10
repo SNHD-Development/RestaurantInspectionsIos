@@ -11,6 +11,11 @@
 // Alloy.Globals.someGlobalFunction = function(){};
 
 var util = require('util');
+
+var GA = require("analytics.google");
+GA.trackUncaughtExceptions = true;
+Alloy.Globals.Tracker = GA.getTracker("UA-55158890-3");
+ 
 Alloy.Globals.Map = require('ti.map');
 
 Alloy.Collections.restaurants = new Backbone.Collection();

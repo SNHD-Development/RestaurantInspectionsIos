@@ -18,12 +18,20 @@ var window = NappSlideMenu.createSlideMenuWindow({
 	leftLedge: util.getPlatformWidthDip() - 240,
 	parallaxAmount:0.2
 });
-window.open();	
+window.open();
+
+window.addEventListener('viewWillOpen', function(){
+	Ti.App.fireEvent("hideSearchKeyboard");
+});
    
 function tweet(){
 	closeLeftWindow();
+	Alloy.Globals.Tracker.trackEvent({
+	  category: "UserActions",
+	  action: "TweetClicked",
+	});
 	var twitterAppUrl = "twitter://post?message=@foodapp Nice App :)";
-	var twitterWebUrl = "https://twitter.com/intent/tweet?status=@foodapp Nice App :)";
+	var twitterWebUrl = "https://twitter.com/intent/tweet?status=@SNHDinfo #restaurantgradesnv ";
 	if (Ti.Platform.canOpenURL(twitterAppUrl)){
 		Titanium.Platform.openURL(twitterAppUrl);	
 	}else{

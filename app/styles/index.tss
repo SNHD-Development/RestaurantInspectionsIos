@@ -26,7 +26,7 @@
 
 "#lblTitle":{
 	color:'black',
-	font: { fontSize: 18, fontWeight: 'bold' },
+	font: { fontSize: 16 },
 	textAlign: 'center',
 	width: '100%'
 }

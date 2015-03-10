@@ -6,7 +6,7 @@
 "ScrollView":{
 	backgroundColor: 'white',
 	layout: 'vertical',
-	top: 60,
+	top: 90,
 	showHorizontalScrollIndicator: false
 }
 
@@ -94,7 +94,7 @@
 
 "#lblTitle":{
 	color:'black',
-	font: { fontSize: 16, fontWeight: 'bold' },
+	font: { fontSize: 16 },
 	textAlign: 'center',
 	width: '100%',
 	left: 0
@@ -120,8 +120,10 @@
 
 "#lblRestaurantName":{
 	height: 30,
-	color: '#222',
+	color: '#888',
 	backgroundColor: '#ede9e5',
 	width: '100%',
-	textAlign: 'center'
+	textAlign: 'center',
+	font: {fontSize: 12},
+	top: 60
 }

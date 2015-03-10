@@ -4,6 +4,9 @@ var restaurants = Alloy.Collections.restaurants;
 restaurants.trigger('change');
 var args = arguments[0] || {};
 
+Alloy.Globals.Tracker.trackScreen({
+  screenName: "Bookmarked"
+});
 
 function getBookmarkedRestaurantPnums(){
 	var bookmarksCollection = Alloy.createCollection('bookmark');

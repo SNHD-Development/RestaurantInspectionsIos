@@ -4,6 +4,10 @@ var restaurants = Alloy.Collections.restaurants;
 
 var args = arguments[0] || {};
 
+Alloy.Globals.Tracker.trackScreen({
+  screenName: "Nearby Restaurants"
+});
+
 function refreshRestaurantSummary(data,append){
 	if (_.isNull(data)){
 		return;
@@ -72,6 +76,10 @@ function searchHandler(e){
 	if (searchTerm == '' || searchTerm == null){
 		return;
 	}
+	Alloy.Globals.Tracker.trackEvent({
+	  category: "UserActions",
+	  action: "Searched",
+	});
 	$.lvSummary.removeEventListener('marker', loadNearbyRestaurants);
 	util.getLatLon(function(err, loc){
 		serviceAgent.loadRestaurantsByName(searchTerm,loc.lat, loc.lon,0,30,function(err, data){
@@ -152,6 +160,9 @@ function init(){
 				$.sbRestaurantSearch.focus();
 			});
 		}
+	});
+	Ti.App.addEventListener('hideSearchKeyboard', function(){
+		$.sbRestaurantSearch.blur();
 	});
 	$.lvSummary.addEventListener('marker',loadNearbyRestaurants);
 }

@@ -2,6 +2,10 @@ var util = require('util');
 
 var args = arguments[0] || {};
 
+Alloy.Globals.Tracker.trackScreen({
+  screenName: "Legend"
+});
+
 function init(){
 	$.legendGradeA.backgroundColor = util.getGradeColor('A');
 	$.legendGradeB.backgroundColor = util.getGradeColor('B');
