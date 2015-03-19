@@ -33,6 +33,7 @@
 					<Label id="grade" text="{grade}" />	
 				</View>
 				<Label id="inspectedDate" text="{inspectedDate}" />
+				<Label id="numDemerits" text="{demerits}" />
 				<View id="itemSeparator"></View>
 				<Label class="lblViolations" text="{violations}"></Label>
 			</TableViewRow>

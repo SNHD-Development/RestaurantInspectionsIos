@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>org.cchd.ri</id>
-    <name>Restaurant Grades Southern NV</name>
+    <name>Restaurants</name>
     <version>1.0</version>
-    <publisher>Tharindu</publisher>
+    <publisher>Southern Nevada Health District</publisher>
     <url>http://</url>
-    <description>undefined</description>
-    <copyright>2014 by Tharindu</copyright>
+    <description>See current and historical restaurant inspection grades from the Southern Nevada Health District. Find information for all restaurants in your area or search for restaurant grade cards by name.  View Yelp ratings for restaurants.</description>
+    <copyright>2014 by Southern Nevada Health District</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>

@@ -61,7 +61,7 @@ function init(){
     	var inspection = new Backbone.Model({
     		inspectedDate: (new Date(d.inspectionTime)).toLocaleDateString(),
     		grade: d.grade,
-    		demerits:  (_.isNull(demerits) || demerits == 0) ? 0 : "-" + d.inspectionDemerits,
+    		demerits:  (_.isNull(demerits) || demerits == 0) ? 'No demerits' : d.inspectionDemerits + ' Demerits',
     		gradeColor: util.getGradeColor(d.grade),
     		violations: d.violations
     	});
@@ -236,10 +236,6 @@ function loadNextRestaurant(){
 			currIdx: nextIdx
 		}).getView();
 		view.open({transition:Ti.UI.iPhone.AnimationStyle.NONE});
-		// setTimeout(function(){
-			// $.winRestaurantDetail.opacity = 0;
-			// $.winRestaurantDetail.close();
-		// }, 600);
 	});
 }
 
@@ -260,14 +256,13 @@ function loadPrevRestaurant(){
 			currIdx: prevIdx
 		}).getView();
 		view.open({transition:Ti.UI.iPhone.AnimationStyle.NONE});
-		// setTimeout(function(){
-			// $.winRestaurantDetail.opacity = 0;
-			// $.winRestaurantDetail.close();
-		// }, 600);
 	});
 }
 
 function tvInspection_onSwipe(e){
+	if (!args.hasOwnProperty('pidList'))
+		return;
+		
 	Alloy.Globals.Tracker.trackEvent({
 	  category: "UserActions",
 	  action: "SwipedOnRestaurantDetail",
