@@ -40,7 +40,7 @@
 	width: 40
 }
 
-"#demerits":{
+"#thirdLine":{
 	color: '#888',
 	font: { fontSize: 12 },
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,

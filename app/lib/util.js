@@ -1,3 +1,5 @@
+var moment = require('alloy/moment');
+
 exports.getLatLon = function(cb){
 	if (ENV_DEVELOPMENT)
 		return cb(false,{lat: Alloy.CFG.DefaultLat, lon: Alloy.CFG.DefaultLon});
@@ -74,12 +76,16 @@ exports.getRestaurantModels = function(d){
 		
 		d[i].current_grade = d[i].current_grade.toUpperCase();	
 		var demerits = d[i].current_demerits;
+		var demeritsText = demerits == 0 ? 'No demerits' : demerits + ' demerits';
+		var lastInspectedText = _.isNull(d[i].date_current) ? '' : 'Inspected on ' + moment(d[i].date_current).format('l');
 		var milesAwayText = _.isNull(d[i].dist) ? '' : d[i].dist.toFixed(1) + ' mi';
 		var locationText = _.isNull(d[i].address) ? milesAwayText : milesAwayText + ' · ' + d[i].address;
+		var thirdLineText = lastInspectedText == '' ? demeritsText : demeritsText + ' · ' + lastInspectedText;
 		var restaurant = new Backbone.Model({
 			name: d[i].restaurant_name, 
 			grade: d[i].current_grade, 
-			demerits: demerits == 0 ? 'No demerits' : demerits + ' demerits',
+			demerits: demeritsText,
+			thirdLine: thirdLineText,
 			location: locationText,
 			gradeColor: util.getGradeColor(d[i].current_grade),
 			permitNumber: d[i].permit_number

@@ -10,14 +10,14 @@
 						</View>
 						<Label bindId="name" id="name"/>
 						<Label bindId="location" id="location" />
-						<Label bindId="demerits" id="demerits" />
+						<Label bindId="thirdLine" id="thirdLine" />
 						<View id="itemSeparator"></View>
 					</ItemTemplate>
 				</Templates>
 				<ListSection id="lsSummary" dataCollection="restaurants">
 					<ListItem grade:text="{grade}" 
 						gradeOuter:backgroundColor="{gradeColor}" 
-						demerits:text="{demerits}" 
+						thirdLine:text="{thirdLine}" 
 						name:text="{name}" 
 						location:text="{location}" />
 				</ListSection>

@@ -103,7 +103,7 @@
 	top: 200,
 	separatorColor: "transparent",
 	allowsSelection: false,
-	minRowHeight: 85,
+	minRowHeight: 100,
 	backgroundImage: '/images/p6.png',
 	backgroundRepeat: 'true',
 }
@@ -114,8 +114,15 @@
 	height: Titanium.UI.SIZE
 }
 
+"#lblViolationsHeader":{
+	top: 56,
+	left: 10,
+	color: '#888',
+	font: {fontSize: 13},
+}
+
 ".lblViolations":{
-	top: 55,
+	top: 71,
 	left: 20,
 	color: '#888',
 	font: {fontSize: 13},

@@ -35,6 +35,7 @@
 				<Label id="inspectedDate" text="{inspectedDate}" />
 				<Label id="numDemerits" text="{demerits}" />
 				<View id="itemSeparator"></View>
+				<Label id = "lblViolationsHeader">Violations:</Label>
 				<Label class="lblViolations" text="{violations}"></Label>
 			</TableViewRow>
 		</TableView>

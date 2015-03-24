@@ -1,8 +1,8 @@
-#appname: RestaurantInspections
-#publisher: Tharindu
-#url: http://
-#image: appicon.png
-#appid: org.cchd.ri
-#desc: undefined
-#type: ipad
-#guid: 6b5478c6-1402-4fd0-a0c2-2becbb195f10
+#appname:RestaurantInspections
+#publisher:Southern Nevada Health District
+#url:http://
+#image:appicon.png
+#appid:org.cchd.ri
+#desc:See current and historical restaurant inspection grades from the Southern Nevada Health District. Find information for all restaurants in your area or search for restaurant grade cards by name.  View Yelp ratings for restaurants.
+#type:ipad
+#guid:6b5478c6-1402-4fd0-a0c2-2becbb195f10
