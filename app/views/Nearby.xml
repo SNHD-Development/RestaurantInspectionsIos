@@ -17,9 +17,11 @@
 						<View bindId="gradeOuter" class="gradeOuter">
 							<Label bindId="grade" class="grade"/>
 						</View>
-						<Label bindId="name" id="name"/>
-						<Label bindId="location" id="location" />
-						<Label bindId="thirdLine" id="thirdLine" />
+						<View class="vSummaryDataText">
+							<Label bindId="name" id="name"/>
+							<Label bindId="location" id="location" />
+							<Label bindId="thirdLine" id="thirdLine" />	
+						</View>
 						<View id="itemSeparator"></View>
 					</ItemTemplate>
 				</Templates>

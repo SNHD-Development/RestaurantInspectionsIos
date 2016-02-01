@@ -11,7 +11,7 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>6b5478c6-1402-4fd0-a0c2-2becbb195f10</guid>
+    <guid>acd80a23-3706-4856-9ddd-e2662b58c332</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
         <plist>
@@ -23,6 +23,8 @@
                 <key>UISupportedInterfaceOrientations~iphone</key>
                 <array>
                     <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
                 </array>
                 <key>UISupportedInterfaceOrientations~ipad</key>
                 <array>
@@ -86,8 +88,9 @@
         <target device="iphone">true</target>
         <target device="mobileweb">false</target>
     </deployment-targets>
-    <sdk-version>3.5.0.GA</sdk-version>
+    <sdk-version>5.0.0.GA</sdk-version>
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
+    <property name="appc-app-id" type="string">562fcd52bc404f16587aa12a</property>
 </ti:app>

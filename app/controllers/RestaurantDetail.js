@@ -68,7 +68,6 @@ function init(){
     	ds.push(inspection);
     }
     inspections.reset(ds);
-    inspections.trigger('change');
     Alloy.Globals.Loader.hide();
     var bookmark = getBookmark();
     setBookmarkIcon(bookmark);
@@ -80,8 +79,12 @@ function setupMap(){
     $.aCurrentLoc.longitude = restaurantDetail.longitude;
     $.aCurrentLoc.title = restaurantDetail.name;
     $.aCurrentLoc.subtitle = addr;
-    $.mapview.region = {latitude:restaurantDetail.latitude, longitude:restaurantDetail.longitude,
-        latitudeDelta:0.01, longitudeDelta:0.01};
+    $.mapview.region = {
+    	latitude: parseFloat(restaurantDetail.latitude), 
+    	longitude: parseFloat(restaurantDetail.longitude),
+       latitudeDelta:0.01, 
+       longitudeDelta:0.01
+   };
     $.mapview.annotations = [$.aCurrentLoc];
 }
 

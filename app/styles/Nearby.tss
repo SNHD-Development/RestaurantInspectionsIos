@@ -27,21 +27,43 @@
 	zIndex: 2
 }
 
+".vSummaryDataText":{
+	layout: 'vertical',
+	left: 60,
+	//backgroundColor: 'yellow'
+}
+
 "#name":{
     color: 'black',
     font: { fontSize: 14, fontWeight: 'bold' },
-    left: 60, 
+    //left: 60, 
     top: 11,
+    //backgroundColor: 'blue',
     height: 20,
     wordWrap: false,
+    left: 0,
     width: Titanium.UI.FILL
 }
 
 "#location" : {
     color: '#888',
     font: { fontSize: 12 },
-    left: 60, 
-    top: 31
+    //left: 60, 
+    //top: 31,
+    //top: 5,
+    left: 0,
+    //backgroundColor: 'green',
+}
+
+"#thirdLine":{
+	color: '#888',
+	font: { fontSize: 12 },
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    //left: 60, 
+    //top: 46,
+    //top: 5,
+    left: 0,
+    //backgroundColor: 'red',
 }
 
 ".gradeOuter":{
@@ -58,14 +80,6 @@
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
 	height: 40,
 	width: 40
-}
-
-"#thirdLine":{
-	color: '#888',
-	font: { fontSize: 12 },
-	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-    left: 60, 
-    top: 46
 }
 
 "#itemSeparator":{

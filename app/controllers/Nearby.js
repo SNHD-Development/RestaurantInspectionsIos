@@ -8,7 +8,7 @@ Alloy.Globals.Tracker.trackScreen({
   screenName: "Nearby Restaurants"
 });
 
-function refreshRestaurantSummary(data,append){
+function refreshRestaurantSummary(data,append,setMarker){
 	if (_.isNull(data)){
 		return;
 	}
@@ -16,8 +16,9 @@ function refreshRestaurantSummary(data,append){
 	var models = util.getRestaurantModels(d);
 	if (append){
 		restaurants.add(models, {silent: true});
-		restaurants.trigger('change');
+		$.lvSummary.addEventListener('marker', loadNearbyRestaurants);
 		$.lvSummary.setMarker({sectionIndex:0, itemIndex:(restaurants.length - 1)});
+		restaurants.trigger('change');
 	}else{
 		restaurants.reset(models);
 	}
@@ -39,6 +40,7 @@ function getRestaurantPidList(){
 }
 
 function lvSummary_onItemclick(e){
+	$.lvSummary.touchEnabled = false;
 	$.sbRestaurantSearch.blur();
 	var restaurant = restaurants.at(e.itemIndex);
 	Alloy.Globals.Loader.show();
@@ -54,6 +56,7 @@ function lvSummary_onItemclick(e){
 		}).getView();
 		$.lvSummary.deselectItem(e.selectionIndex, e.itemIndex);
 		view.open({transition:Ti.UI.iPhone.AnimationStyle.NONE});
+		$.lvSummary.touchEnabled = true;
 	});
 }
 
@@ -87,7 +90,7 @@ function searchHandler(e){
 			if (err != null){
 				return;
 			}
-			refreshRestaurantSummary(data,false);
+			refreshRestaurantSummary(data,false,false);
 		});	
 	});
 }
@@ -111,7 +114,6 @@ function lblDisclaimer_onClick(){
 
 function loadNearbyRestaurants(){
 	var i = restaurants.length;
-	console.log(i);
 	if (i > 100)
 		return;
 	Alloy.Globals.Loader.show();

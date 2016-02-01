@@ -1,6 +1,6 @@
 {
   "global": {
-    "ApiBaseUri": "http://ris-dev.cchd.org/",
+    "ApiBaseUri": "http://ris.southernnevadahealthdistrict.org/",
     "InternalApiBaseUri": "https://api-dev.southernnevadahealthdistrict.org/",
     "GradeA": "#0055a5",
     "GradeB": "#00a261",
@@ -13,16 +13,21 @@
     "AppBackground": "#e0dcd8",
     "AppBlue": "#0e4291",
     "DefaultLat": "36.085883",
-    "DefaultLon":"-115.149411"
+    "DefaultLon":"-115.149411",
+    "MockDataMode": true
   },
-  "env:development": {},
+  "env:development": {
+  	"MockDataMode": true
+  },
   "env:test": {
   	"ApiBaseUri": "http://ris.southernnevadahealthdistrict.org/",
-    "InternalApiBaseUri": "https://api.southernnevadahealthdistrict.org/"
+    "InternalApiBaseUri": "https://api.southernnevadahealthdistrict.org/",
+    "MockDataMode": true
 	},
   "env:production": {
   	"ApiBaseUri": "http://ris.southernnevadahealthdistrict.org/",
-    "InternalApiBaseUri": "https://api.southernnevadahealthdistrict.org/"
+    "InternalApiBaseUri": "https://api.southernnevadahealthdistrict.org/",
+    "MockDataMode": true
   },
   "os:android": {},
   "os:blackberry": {},

@@ -2,8 +2,8 @@ exports.definition = {
 	config: {
 		columns: {
 		    "bookmarkId": "INTEGER PRIMARY KEY AUTOINCREMENT",
-		    "RestaurantPermitId": "string",
-		    "Bookmarked": "boolean"
+		    "RestaurantPermitId": "text",
+		    "Bookmarked": "integer"
 		},
 		adapter: {
 			type: "sql",
